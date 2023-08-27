@@ -1,8 +1,12 @@
+@font-face {
+    font-family:Ranade;
+    src: url(Ranade-Regular.otf);
+}
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Roboto;
+    font-family:Ranade;
     
 }
 body{
@@ -56,18 +60,18 @@ body{
     margin: 20px 20px;
     color:#3d75be;
     
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ranade', sans-serif;
     
 }
 nav.navbar-custom .navbar-nav .nav-link {
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ranade', sans-serif;
     font-size: 18px;
 }
 .navbar-brand{
     color: #3d75be;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Titan One', cursive;
+    font-family: 'Ranade', sans-serif;
+    font-family: 'Ranade', sans-serif;
     font-size: 30px;
     margin-left: 20px;
 }
@@ -84,7 +88,7 @@ nav.navbar-custom .navbar-nav .nav-link {
 }
 .dropdown-item{
     color: black;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Ranade', sans-serif;  
 }
 .navbar-custom .btn-custom {
     background-color: #487fc7;
@@ -104,13 +108,12 @@ nav.navbar-custom .navbar-nav .nav-link {
 }
 .screen-text{
     font-family: 'Roboto', sans-serif;
-    font-family: 'Titan One', cursive;
     font-size: 70px;
     width: 1200px;
     text-align: left;
 
 }
-.header hr{
+.header .line{
     width: 50vh;
     border: 5px;
     border-style: solid;
@@ -119,7 +122,7 @@ nav.navbar-custom .navbar-nav .nav-link {
     margin-bottom: 200px;
     transition: width 0.3s, border-radius 0.3s;
 }
-hr:hover {
+.header .line:hover {
     width: 60vh;
     border-radius: 30px;
 }
@@ -143,4 +146,36 @@ hr:hover {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  .skill-brew-container {
+    display: flex;
+    justify-content:space between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap:10px;
+    width:400px;
+  }
+  
+  .skill-list {
+    flex: 1;
+    padding: 3px;
+    border: none;
+    margin: 1px; 
+    display: flex;
+    align-items: center;
+    font-size: 14px; 
+  }
+  
+  .tick {
+    margin-right: 2px;
+    color:blue;
+  }
+  .skill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    gap: 40px;
+    text-align: left;
+    margin:50px 0 0 50px;
   }
